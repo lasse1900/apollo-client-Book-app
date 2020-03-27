@@ -5,14 +5,17 @@ import ApolloBoost, { gql } from 'apollo-boost'
 // 2.	How to send it off to the server to fetch response?
 // 3.	How do we access the response?
 
-const client = new ApolloBoost({
-  uri: 'http://localhost:4000'
-})
+// const client = new ApolloBoost({
+//   uri: 'http://localhost:4000'
+// })
 
 // const client = new ApolloBoost({
 //   uri: 'https://secret-ravine-62965.herokuapp.com/'
 // })
 
+const client = new ApolloBoost({
+  uri: 'https://damp-meadow-54305.herokuapp.com/'
+})
 
 const getUsers = gql`
   query {
